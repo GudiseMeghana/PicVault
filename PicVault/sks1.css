@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+.side-bar{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left:-100%;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+
+}
+.side-bar.active{
+    left: 0;
+}
+.side-bar .menu{
+    width: 100%;
+    margin-top: 80px;
+
+}
+.side-bar .menu.item{
+    position: relative;
+    cursor: pointer;
+    
+}
+.side-bar .menu .item a{
+    color:#000000;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+
+}
+.side-bar .menu .item a:hover{
+    background-color: brown;
+    transition: 0.3s ease;
+}
+.side-bar .menu .item i{
+    margin-right: 15px;
+
+}
+.side-bar .menu .item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+
+}
+.side-bar .menu .item .sub-menu{
+    background: rgba(red, green, blue, 0.1);
+    display: none;
+}
+
+.side-bar .menu .item .sub-menu a{
+    padding-left: 80px;
+}
+.rotate{
+    transform:rotate(90deg);
+}
+.close-btn{
+    position: absolute;
+    color:#090361;
+    font-size: 20px;
+    right:0 ;
+    margin: 25px;
+    cursor: pointer;
+}
+.menu-btn{
+    position:absolute;
+    color:#e2485a;
+    font-size: 20px;
+    margin: 25px;
+    cursor: pointer;
+}
+.xy:hover{
+    transform: rotate(45deg);
+}
+.rotate:hover{
+    transform: rotate(45deg);
+}
+.mn:hover{
+    transform: scale(1.2);
+}
+.menu-btn{
+    position: fixed;
+}
+a{
+    text-decoration: none;
+}
+button:hover{
+    transform:scale(1.1);
+}
+ul.thumbs li span{
+	width:280px;
+	margin:0 0 0 8px
+}
+html {
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 30px;
+}
+button {
+    background-color: #df1111;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.step {
+
+    border-collapse: collapse;
+    border-color: #ddd;
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.step h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.step p {
+    line-height: 1.5;
+}
+.step:hover{
+    transform: scale(1.1);
+}
